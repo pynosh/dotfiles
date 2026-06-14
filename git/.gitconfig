@@ -1,0 +1,38 @@
+# ~/.gitconfig
+
+
+[user]
+  name = pynosh
+  email = pynosh@noreply.codeberg.org
+  signingkey = 7023D0EA05F9BD46
+
+
+[core]
+  editor = micro
+  autocrlf = input
+  excludesfile = ~/.gitignore_global
+
+
+[init]
+  defaultBranch = main
+
+
+[pull]
+  rebase = true
+
+
+[commit]
+  gpgsign = true
+
+
+[tag]
+  gpgsign = true
+
+
+[alias]
+  lg = log --oneline --graph --decorate --all
+  undo = reset HEAD~1 --mixed
+
+
+[include]
+  path = ~/.gitconfig.local
