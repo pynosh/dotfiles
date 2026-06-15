@@ -1,34 +1,30 @@
 # ~/.config/starship.toml
 
-format = "$username@$hostname$directory$git_branch$git_status$line_break$character"
- 
+format = "$username$directory$git_branch$git_status$line_break$character"
+
 [username]
 show_always = true
-format = "[$user]($style)"
-style_user = "bold blue"
- 
-[hostname]
-ssh_only = false
-format = "[Mac ]($style)"
-style = "bold cyan"
- 
+format = "[$user ]($style)"
+style_user = "bold cyan"
+style_root = "bold red"
+
 [directory]
 format = "[$path]($style) "
 style = "bold blue"
 truncation_length = 4
- 
+
 [git_branch]
 format = "[$symbol$branch]($style)"
 style = "bold cyan"
 symbol = ""
- 
+
 [git_status]
 format = "([$all_status]($style)) "
 style = "bold yellow"
- 
+
 [character]
 success_symbol = "[❯](bold blue)"
 error_symbol = "[❯](bold red)"
- 
+
 [line_break]
 disabled = false

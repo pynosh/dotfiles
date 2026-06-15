@@ -1,14 +1,10 @@
 # FONT
-font-family = "MapleMono Nerd Font"
-#font-family = "CommitMono Nerd Font"
-
-font-size = 16
+font-size = 12
 
 # THEME
-background-opacity = 0.90
+background-opacity = 0.95
 background-blur-radius = 40
-cursor-style = block
-cursor-style-blink = true
+
 
 # DESIGN
 window-padding-x = 15
@@ -21,14 +17,7 @@ scrollback-limit = 50000
 confirm-close-surface = true
 link-url = true
 
-# KEYBINDINGS
-keybind = ctrl+equal=increase_font_size:1
-keybind = ctrl+minus=decrease_font_size:1
-keybind = ctrl+zero=reset_font_size
-
 # MACOS
 macos-option-as-alt = true
-#macos-titlebar-style = hidden
 macos-icon = official
 term = xterm-256color
-right-click-action = context-menu
