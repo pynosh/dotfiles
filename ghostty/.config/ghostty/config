@@ -11,9 +11,7 @@ window-padding-y = 15
 window-padding-balance = true
 
 # BEHAVIOR
-copy-on-select = true
 scrollback-limit = 50000
-confirm-close-surface = true
 link-url = true
 
 # MACOS
