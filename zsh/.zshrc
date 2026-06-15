@@ -120,9 +120,6 @@ if [[ "$(uname)" == "Darwin" ]]; then
    export PATH="/opt/homebrew/bin:$PATH"
    export PATH="/opt/homebrew/sbin:$PATH"
 elif [[ "$(uname)" == "Linux" ]]; then
-  _BW_SOCK="$HOME/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock"
-  [[ -z "$SSH_AUTH_SOCK" && -S "$_BW_SOCK" ]] && export SSH_AUTH_SOCK="$_BW_SOCK"
-  unset _BW_SOCK
 fi
 
 
